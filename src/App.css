@@ -1,0 +1,122 @@
+/* api https://jsonplaceholder.typicode.com/comments */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.comments-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.comment-card {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  max-width: 500px;
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #007aff;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-email {
+  font-size: 13px;
+  color: #007aff;
+  text-decoration: none;
+}
+
+.user-email:hover {
+  text-decoration: underline;
+}
+
+.meta-tag {
+  font-size: 11px;
+  font-weight: 700;
+  background-color: #f2f2f7;
+  color: #8e8e93;
+  padding: 4px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.card-body {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3a3a3c;
+  white-space: pre-line;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #f2f2f7;
+  padding-top: 12px;
+}
+
+.comment-id {
+  font-size: 12px;
+  color: #aeaeae;
+  font-weight: 500;
+}
+
+.navbar{
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 255, 0.14);
+}
+.logo{
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: #007bff53;
+    display: inline;
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 2px 5px 3px rgba(128, 128, 128, 0.187);
+}
